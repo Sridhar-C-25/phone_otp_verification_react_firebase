@@ -62,7 +62,7 @@ const App = () => {
         setUser(res.user);
         setLoading(false);
       })
-      .className((err) => {
+      .catch((err) => {
         console.log(err);
         setLoading(false);
       });
